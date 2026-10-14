@@ -233,7 +233,7 @@ img, svg{ display: block; max-width: 100%; }
 .gate__parallax{
   position: absolute; inset: -30px;   /* oversized so edges stay hidden while shifting */
   background-image:
-    url('../assets/backgrounds/gate.png');
+    url('../Digital-01.jpg');
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -1632,16 +1632,14 @@ a:focus-visible, button:focus-visible{
   .gate__button{ padding: .7rem 1.8rem; }
 }
 
-/* ===== MOBILE BACKGROUND — gate-portrait.png for gate, portrait-hero.png for hero ===== */
+/* ===== MOBILE BACKGROUND — Digital-01.jpg for gate, portrait-hero.png for hero ===== */
 @media (max-width: 768px) {
   .gate {
-    background-image:
-      linear-gradient(to bottom, rgba(0,0,0,.15) 0%, rgba(0,0,0,.05) 40%, rgba(0,0,0,.2) 100%),
-      url('../assets/backgrounds/gate-portrait.png') !important;
+    background-image: url('../Digital-01.jpg') !important;
     background-position: center center !important;
   }
   .gate__parallax {
-    background-image: url('../assets/backgrounds/gate-portrait.png') !important;
+    background-image: url('../Digital-01.jpg') !important;
   }
   .hero {
     background-image: url('../assets/backgrounds/portrait-hero.png') !important;
@@ -1989,9 +1987,16 @@ button.hero__cta {
   background: transparent !important;
 }
 
-/* Remove dark gradient from gate background */
+/* Gate background image and styling */
 .gate {
-  background-image: url('../assets/backgrounds/portrait-hero.png') !important;
+  background-image: url('../Digital-01.jpg') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+.gate__parallax {
+  display: none !important;
 }
 
 /* All gate text — dark/black for visibility */
@@ -2171,12 +2176,12 @@ button.hero__cta {
   }
 }
 
-/* ===== HERO META — Poppins Regular ===== */
+/* ===== HERO META — Playfair Display ===== */
 .hero__meta {
-  font-family: 'Poppins', sans-serif !important;
-  font-weight: 200 !important;
-  letter-spacing: 0.05em !important;
-  text-transform: none !important;
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
 }
 
 /* ===== HERO NAMES — gold color matching the & ===== */
